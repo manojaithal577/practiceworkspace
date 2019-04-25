@@ -1,0 +1,35 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    {{ title }}!
+  </h1>
+</div>
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand">
+    <span style="font-size:30px;cursor:pointer" (click)="openNav()">&#9776;</span>
+  </a>
+  <div ngbDropdown class="d-inline-block">
+    <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Type</button>
+    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+      <button ngbDropdownItem routerLink="/owner">Owner</button>
+      <button ngbDropdownItem routerLink="/user">User</button>
+      <button ngbDropdownItem routerLink="/trainer">Trainer</button>
+    </div>
+  </div>
+</nav>
+
+<h4><router-outlet></router-outlet> </h4>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+  <a href="#">Dashboard</a>
+  <a href="#">Membership</a>
+  <a href="#">Challenges</a>
+  <a href="#">Earning and Profit</a>
+  <a href="#">Equipment maintenance</a>
+</div>
+
+
+<!-- <app-graphs></app-graphs> -->

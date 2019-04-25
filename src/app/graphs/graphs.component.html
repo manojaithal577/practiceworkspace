@@ -1,0 +1,7 @@
+<!-- <p>
+  graphs works!
+</p> -->
+<div *ngIf="chart">
+  <img *ngIf="loading" src="../../assets/img/giphy.gif" />
+  <canvas id="canvas">{{ chart }}</canvas>  
+</div>
